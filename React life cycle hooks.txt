@@ -1,0 +1,33 @@
+React component lifecycle:
+the series of event that happen from the mounting of a react component to its unmounting.
+Mounting : birth of your component
+Update  : growth of your component
+Unmount : death of your component
+
+Methods in react component lifecycle:
+constructor : 
+run before the render method, and its run to initialize the method
+
+render() : method is used to render html of the component in react.
+this method is required for a class based component to render the DOM. it runs
+during the mounting and updating of your component. render() method should be pure
+example:you cannor modify state inside it.
+
+componentDidUpdate() : method run after the component output has been rendered to the DOM.
+
+compponentDidUpdate() : method is invoked as soon as the updating happens the most common use case
+for this component method is updating the DOM in response to prop or state changes.
+
+componentWillUnmount() : method call just before the component is unmounted and destroyed usually
+used to perform cleanups
+
+
+what are react hooks?
+features of class based component in function based components
+it allows you to use state and other react features without writing a class
+hooks are the functions which hook into react state and lifecyle features from function components
+commonly used ract hooks:
+-useState
+-useEffect
+-useContext
+-useRef
